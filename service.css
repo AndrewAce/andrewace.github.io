@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+#parallax-image {
+    background-image: url("images/carousel1.jpeg");
+    height: 500px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-image1 {
+    background-image: url("images/flowerbanner.jpg");
+    height: 250px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-image2 {
+    background-image: url("images/flowerbannerend.jpg");
+    height: 250px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-container {
+    flex-basis: 45%;
+}
+
+div div table thead tr th {
+    text-align: center;
+}
+.container {
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translate(-100%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+.logo:nth-child(2) {
+    transition-delay:20ms;
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+

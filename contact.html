@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="images/logowithbg.jpg">
+    <script defer src="common.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <title>MyBeautyStation | Contact Us</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid" id="wholeNav">
+            <a class="navbar-brand ms-5" href="#" style="height:100%;">
+                <img src="images/logo_new.png" alt="logo" id="logo">
+            </a>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gallery" href="gallery.html">Our Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="parallax-image">
+        <div class="row h-100">
+            <div class="col-md-12 align-self-center">
+                <h1 class="text-center" style="color:white; text-shadow: 3px 3px black;">CONTACT US</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom: 30px; text-align: center;">
+        <div>
+            <hr style="color: goldenrod;">
+            <h1>We'd Love to Hear From You</h1>
+            <hr style="color: goldenrod;">
+        </div>
+    </div>
+    <div class="container forms md">
+        <form id="contactForm" action="thank_you.html" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <br>
+                <input type="radio" class="#" id="gender" name="gender" value="Male"> Male
+                <input type="radio" class="#" id="gender" name="gender" value="Female"> Female
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message to Us</label>
+                <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+
+            <div class="button">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-danger">Clear</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="col-3"></div>
+    <div class="container"></div>
+    <div id="parallax-image1" style="height: 250px;">
+        <div class="row h-100">
+            <div class="col-md-12 align-self-center">
+                <h1 class="text-center" style="color:white;">Where are we located?</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-bottom:50px;">
+            <!-- Map -->
+            <iframe class="col"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6608761438943!2d103.8368949741106!3d1.3801351000000133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da174461862ab3%3A0xd5814037d8033144!2sMy%20Beauty%20Station!5e0!3m2!1sen!2ssg!4v1688115306457!5m2!1sen!2ssg"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col" style="text-align: center;">
+                <!-- Description of website -->
+                <h3>My Beauty Station</h3>
+                <h5 style="font-size: 15px;">Ang Mo Kio Ave 4, #01-982 Blk629, S560629</h5>
+                <p>Opening Hours:</p>
+                <p>Monday - Friday: 8am to 7pm</p>
+                <p>Saturday & Sunday: 8am to 7pm </p>
+                <br>
+                <p>Contact Number: #</p>
+                <br>
+                <p>Whatsapp: #</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+    </div>
+    <div id="parallax-image2">
+    </div>
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-white btn-floating btn-lg" id="btn-back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <footer class="py-3 my-4">
+        <img src="images/logo.png" alt="logo" class="rounded mx-auto d-block" width="75px" height="70px"
+            style="text-align: center;">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2023 MyBeautyStation&reg; <br></p>
+    </footer>
+    <script>
+        const contactForm = document.getElementById("contactForm");
+    
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+    
+            // Get form values
+            const name = document.getElementById("name").value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const message = document.getElementById("message").value;
+    
+            // Create a URL-encoded string with the form data
+            const formData = new URLSearchParams({
+                name: name,
+                gender: gender,
+                email: email,
+                phone: phone,
+                message: message
+            });
+    
+            // Redirect the user to form_processor.html with the form data as query parameters
+            window.location.href = "thank_you.html?" + formData.toString();
+        });
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+    
+
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Bookings</title>
+</head>
+<body>
+  <h1>View Bookings</h1>
+  <label for="datePicker">Select Date:</label>
+  <input type="date" id="datePicker">
+  <button id="showBookingsButton">Show Bookings</button>
+  <div id="bookingsContainer"></div>
+  <p><a href="booking.html">Make Another Booking</a></p>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('showBookingsButton').addEventListener('click', function() {
+      const selectedDate = document.getElementById('datePicker').value;
+
+      // Retrieve saved bookings from session storage
+      const savedBookings = JSON.parse(sessionStorage.getItem('bookings')) || [];
+
+      // Filter bookings for the selected date
+      const filteredBookings = savedBookings.filter(function(booking) {
+        return booking.bookingDate === selectedDate;
+      });
+
+      // Display the filtered bookings
+      const bookingsContainer = document.getElementById('bookingsContainer');
+      bookingsContainer.innerHTML = '';
+
+      if (filteredBookings.length > 0) {
+        const bookingsList = document.createElement('ul');
+        filteredBookings.forEach(function(booking) {
+          const listItem = document.createElement('li');
+          listItem.textContent = `Customer: ${booking.customerName}, Service: ${booking.serviceType}, Time: ${booking.startTime} - ${booking.endTime}`;
+          bookingsList.appendChild(listItem);
+        });
+        bookingsContainer.appendChild(bookingsList);
+      } else {
+        const noBookingsMessage = document.createElement('p');
+        noBookingsMessage.textContent = 'No bookings found for the selected date.';
+        bookingsContainer.appendChild(noBookingsMessage);
+      }
+    });
+  </script>
+</body>
+</html>

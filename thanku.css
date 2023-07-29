@@ -1,0 +1,15 @@
+body {
+    background-image: url('images/thankuflower.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0; /* Remove default body margin for full coverage */
+}
+
+.info {
+    margin-top: 100px;
+    padding: 30px;
+    background-color: goldenrod;
+    color: white;
+}

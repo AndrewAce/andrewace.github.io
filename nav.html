@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar-top-default {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    overflow: hidden;
+    height: 90px;
+    width: 100%;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next {
+    transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+nav {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-top-default center-logo navbar-expand-lg navbar-simple nav-box-round">
+        <div class="container">
+            <a href="#home" title="Logo" class="logo scroll">
+                <img src="images/logo-black.png" class="logo-dark" alt="logo">
+                <img src="images/logo-white.png" alt="logo" class="logo-light default">
+            </a>
+
+
+            <!--Nav Links-->
+            <div class="collapse navbar-collapse" id="wexim">
+                <div class="navbar-nav w-100 alt-font">
+                    <a class="nav-link scroll active" href="#home">Home</a>
+                    <a class="nav-link scroll" href="#about">About</a>
+                    <a class="nav-link scroll" href="#team">Team</a>
+                    <a class="nav-link scroll" href="#portfolio">Work</a>
+                    <a class="nav-link scroll" href="#price">Pricing</a>
+                    <a class="nav-link scroll" href="#app">App</a>
+                    <a class="nav-link scroll" href="#blog">Blog</a>
+                    <a class="nav-link scroll" href="#contact">Contact</a>
+                    <span class="menu-line"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                </div>
+            </div>
+
+
+            <!--Side Menu Button-->
+            <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+        </div>
+    </nav>
+</body>
+</html>

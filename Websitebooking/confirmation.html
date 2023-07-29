@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking Confirmation</title>
+</head>
+<body>
+  <h1>Booking Confirmation</h1>
+  <p>Your booking has been made for <span id="confirmationDetails"></span>.</p>
+  <p>What would you like to do next?</p>
+  <ul>
+    <li><a href="booking.html">Make Another Booking</a></li>
+    <li><a href="viewbookings.html">View Bookings</a></li>
+  </ul>
+  <script src="script.js"></script>
+  <script>
+    const confirmationDetails = sessionStorage.getItem('confirmationDetails');
+    document.getElementById('confirmationDetails').textContent = confirmationDetails;
+  </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,600&display=swap");
+
+html,
+body {
+    user-select: none;
+    font-family: myFont !important;
+    overflow-x: hidden;
+    padding: 0px;
+    width: 100%;
+}
+
+nav div div ul li a {
+    font-family: Bodoni Moda;
+    color: white;
+    font-size: 20px;
+  }
+
+div div div h1 {
+    font-family: Bodoni Moda;
+    color: white;
+    font-size: 100px;
+}
+
+#logo {
+    height: 70px;
+    width: 75px;
+}
+
+nav {
+    /* text-shadow: 2px 2px 4px goldenrod; */
+    background-color: rgb(255, 255, 255);
+}
+
+nav div div ul li a {
+    font-size: 20px;
+}
+
+#wholeNav {
+    height: 5em;
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.nav-item {
+    text-align: right;
+    margin: 30px;
+}
+
+.nav-button {
+    padding: 20px;
+    width: 175px;
+}
+
+div ul li a {
+    font-size: 25px;
+}
+
+.navbar-scrolled {
+    background-color: #33363D !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* How to make text change color when scrolled? */
+.navitem-scrolled {
+    color: white !important;
+}
+
+.logo-footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#navbarNav {
+    height: 96px;
+}
+
+.navbar-toggler {
+    /* float: none;
+    margin-right: 0; */
+    width: 35px;
+    height: 35px;
+    position: relative;
+    transition: .5s ease-in-out;
+    border-color: transparent;
+    color: transparent;
+    background-color: white;
+}
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: red;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/* when nav is clicked  */
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+/* State when the navbar is collapsed */
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+/* Color of 3 lines */
+.navbar-toggler.collapsed .toggler-icon {
+    background: #B38728;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+nav div div ul {
+    align-items: center;
+}
+
+.navbar-collapse.show {
+    height: 700px !important;
+    background-color: white !important;
+}
+
+/* .nav-button .btn .btn-outline-success .me-2 {
+    align-items: center;
+    background-color: white;
+} */
+@font-face {
+    font-family: myFont;
+    src: url(REM/REM-VariableFont_wght.ttf);
+}

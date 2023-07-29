@@ -1,0 +1,58 @@
+#parallax-image {
+    background-image: url("images/carousel2.jpeg");
+    height: 500px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-image1 {
+    background-image: url("images/dog1.png");
+    height: 500px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-image2 {
+    background-image: url("images/flowerbannerend.jpg");
+    height: 250px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: Bodoni Moda;
+    color: black;
+    font-size: 50px;
+}
+
+form {
+    font-size: 20px;
+    padding: 50px;
+}
+
+.top-left-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.forms {
+    background-color: white;
+    color: goldenrod;
+    margin-bottom: 50px;
+    /* background-image: url(images/logowithbg.jpg);
+    background-repeat: no-repeat; */
+}
+
+.button {
+    margin-left: 150px;
+}

@@ -1,0 +1,33 @@
+table {
+    margin: auto;
+    font-size: 20px;
+}
+
+td {
+    padding: 100px;
+    color: black;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid red;
+}
+
+.bi-trash3 {
+    color: red;
+}
+
+#purchase {
+    color: white;
+    text-decoration: none;
+}
+
+#BuyNow {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+    padding: 0.5rem 0.5rem;
+    box-shadow: none;
+    font-size: 1rem;
+    border: 0px solid #0d6efd;
+}

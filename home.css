@@ -1,0 +1,319 @@
+html,
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-around;
+    position: relative;
+    width: 100% !important;
+}
+
+.container section {
+    width: 100%;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.container section:nth-child(1) .image {
+    background-image: url(images/nails1.png);
+}
+
+.container section:nth-child(2) .image {
+    background-image: url();
+}
+
+.container section:nth-child(3) .image {
+    background-image: url(images/nails2.png);
+}
+
+.container section:nth-child(4) .image {
+    background-image: url(https://images.unsplash.com/photo-1461080639469-66d73688fb21?iq=100&fm=jpg&w=1000);
+}
+
+.container section:nth-child(5) .image {
+    background-image: url(https://images.unsplash.com/photo-1460804198264-011ca89eaa43?iq=100&fm=jpg&w=1000);
+}
+
+.container section:nth-child(6) .image {
+    background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?iq=100&fm=jpg&w=1000);
+}
+
+.container section .image {
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
+    opacity: 0.4;
+}
+
+.container section .stuff {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    max-width: 70%;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000;
+    color: white;
+    margin: 0 auto;
+    font-size: 26px;
+    position: relative;
+}
+
+.container section .stuff h2 {
+    margin: 0px;
+}
+
+.container section .stuff:before,
+.container section .stuff:after {
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: goldenrod;
+    content: "";
+    margin: 30px 0;
+}
+
+.at-twitter {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #f1c40f;
+    z-index: 5000;
+}
+
+.at-twitter:visited {
+    color: #f1c40f;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: inherit;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    padding: 0px;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#parallax-image {
+    background-image: url("images/carousel4.jpg");
+    height: 500px;
+    /* margin-bottom: 50px; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-image2 {
+    background-image: url("images/flowerbannerend.jpg");
+    height: 530px;
+    /* margin-bottom: 50px; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-image3 {
+    background-image: url("images/carousel2.jpeg");
+    height: 530px;
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+    /* margin-bottom: 50px; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-image4 {
+    background-image: url("images/carousel1.jpeg");
+    height: 500px;
+    /* margin-bottom: 50px; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-image5 {
+    background-image: url("images/carousel3.jpeg");
+    height: 500px;
+    /* margin-bottom: 50px; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(logowithbg.jpg);
+
+    /* Full height */
+    height: 900px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutUs {
+    background-color: white;
+    border-radius: 50px;
+    max-width: 650px;
+    /* Set the maximum width to control responsiveness */
+    width: 90%;
+    /* Set the width to occupy 90% of the container */
+    margin: 0 auto;
+    /* Center the element horizontally within its parent container */
+}
+
+#aboutBox {
+    width: 650px;
+    height: 650px
+}
+
+#aboutLink {
+    background-color: white;
+    color: goldenrod;
+}
+div div div div div i {
+    background-color:white;
+}
+div div a {
+    text-decoration: none;
+    color: black;
+}
+
+#contactBtn {
+    text-decoration: none;
+    color: white;
+}
+#aboutBtn {
+    text-decoration: none;
+    color:grey;
+
+}
+button #aboutBtn:hover {
+    color: white;
+}
+#galleryBtn {
+    text-decoration: none;
+    color:white;
+}
+
+/* Styles for the columns */
+.row-cols-lg-3 {
+/* Set a minimum width for each column */
+min-width: 300px;
+}
+
+.col.d-flex.align-items-start {
+/* Set equal gaps between columns horizontally */
+flex: 1;
+margin-right: 10px; /* Adjust the gap size as needed */
+}
+
+/* Clear margin for the last column in a row */
+.col.d-flex.align-items-start:last-child {
+margin-right: 0;
+}
+
+/* Responsive adjustments using media queries */
+@media (max-width: 991.98px) {
+/* On smaller screens, display two columns */
+.row-cols-lg-3 .col.d-flex.align-items-start {
+flex-basis: 50%;
+}
+}
+
+@media (max-width: 767.98px) {
+/* On even smaller screens, display one column */
+.row-cols-lg-3 .col.d-flex.align-items-start {
+flex-basis: 100%;
+}
+}
+.carousel-item img {
+width:100%;
+height: 450px;
+
+}
+#services {
+margin-top: 15px;
+grid-gap: 1rem 150px;
+}
+
+
+.hidden {
+opacity: 0;
+transform: translate(-100%);
+transition: all 1s;
+}
+.hidden2 {
+opacity: 0;
+animation: fadeIn 2s ease-in; 
+}
+@keyframes fadeIn {  
+from {  
+opacity:0;  
+}  
+
+to {  
+opacity:1;  
+}  
+}
+.show {
+opacity: 1;
+filter: blur(0);
+transform: translate(0);
+}
+
+.logo:nth-child(2) {
+transition-delay:200ms;
+}
+.logo:nth-child(3) {
+transition-delay:400ms;
+}
+
+@media (prefers-reduced-motion) {
+.hidden {
+transition: none;
+}
+}

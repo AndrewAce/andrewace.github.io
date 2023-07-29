@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Georgia !important;
+    background-image: url('images/thankuflower.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.formProcess {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div h1 {
+    width: 100%;
+    color: white;
+    background-color: goldenrod;
+    padding: 20px;
+}
+
+#info {
+    border-style: solid;
+    border-top-style: none;
+    border-color: goldenrod;
+}
+
+#button:hover {
+    background: goldenrod;
+    color: white;
+
+}
+
+#button {
+    background-color: white;
+    display: block;
+    /* Changed display property to block */
+    margin: 0 auto;
+    /* Center-align the button horizontally */
+    padding: 10px 20px;
+    /* Adjusted padding to make the button smaller */
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 25px;
+    width: 250px;
+    /* Set a specific width for the button */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 576px) {
+    #button {
+        padding: 8px 16px;
+        /* Adjust padding for smaller screens */
+        font-size: 14px;
+        /* Reduce font size for smaller screens */
+    }
+}

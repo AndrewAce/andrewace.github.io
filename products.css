@@ -1,0 +1,131 @@
+#parallax-image {
+    background-image: url("images/carousel4.jpg");
+    height: 500px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #parallax-image2 {
+    background-image: url("images/flowerbannerend.jpg");
+    height: 250px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card {
+    transition: all 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  /* Floating cart button */
+  #btn-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  /* Cart summary page */
+  .cart-summary {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #f8f9fa;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    padding: 20px;
+  }
+
+  .cart-summary.show {
+    transform: translateX(0);
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  .cart-item-details {
+    flex-grow: 1;
+  }
+
+  .cart-item-name {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .cart-item-cost {
+    margin: 0;
+  }
+
+  .cart-item-quantity {
+    display: flex;
+    align-items: center;
+  }
+
+  .cart-item-quantity-value {
+    margin: 0 5px;
+  }
+
+  .cart-item-remove {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .cart-total {
+    text-align: right;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+  }
+
+  .cart-total h5 {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  #btn-cart {
+    background-color: transparent;
+    color: #060202;
+    padding:5px 15px;
+    margin-bottom: 50px;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid black;
+    border-radius: 60px;
+  }
+  a {
+  text-decoration: none !important;
+}

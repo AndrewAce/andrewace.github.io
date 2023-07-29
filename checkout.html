@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="nav.css">
+   <link rel="stylesheet" href="checkout.css">
+   <link rel="icon" href="images/logowithbg.jpg">
+   <script defer src="checkout.js"></script>
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+       crossorigin="anonymous"></script>
+   <!-- Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,600&display=swap"
+       rel="stylesheet">
+   <title>MyBeautyStation | Cart</title>
+<head>
+  <!-- Include necessary meta tags, stylesheets, and other dependencies -->
+  <!-- ... (previously defined code) -->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid" id="wholeNav">
+        <a class="navbar-brand ms-5" href="#" style="height:100%;">
+            <img src="images/logo_new.png" alt="logo" id="logo">
+        </a>
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-2"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gallery" href="gallery.html">Our Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <div class="container">
+    <h1>Checkout Page</h1>
+    <table class="table border-dark">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product Name</th>
+          <th>Cost</th>
+          <th>Quantity</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Loop through the cart data and display each product in a table row -->
+        <script>
+          // Retrieve the cart data from local storage
+          const cartData = localStorage.getItem("cartData");
+
+          if (cartData) {
+            const cart = JSON.parse(cartData);
+            let totalCost = 0;
+            let totalQuantity = 0;
+
+            for (const productId in cart) {
+              const product = cart[productId];
+
+              totalCost += product.cost * product.quantity;
+              totalQuantity += product.quantity;
+
+              document.write(`
+                <tr class="">
+                  <td><img src="${product.image}" alt="Product Image" width="100"></td>
+                  <td>${product.name}</td>
+                  <td>$${product.cost.toFixed(2)}</td>
+                  <td>${product.quantity}</td>
+                  <td><button onclick="removeProduct('${productId}')"><i class="bi bi-trash3"></i></button></td>
+                </tr>
+              `);
+            }
+
+            // Display the total cost and total quantity at the end
+            document.write(`
+              <tr class="total">
+                <td></td>
+                <td><strong>Total</strong></td>
+                <td><strong>$${totalCost.toFixed(2)}</strong></td>
+                <td><strong>${totalQuantity}</strong></td>
+                <td></td>
+              </tr>
+            `);
+          }
+        </script>
+      </tbody>
+    </table>
+    <!-- <form action="thanku.html">
+      <fieldset>
+        <legend></legend>
+      </fieldset>
+    </form> -->
+    <div class="cotainer">
+      <form method="get" action="thanku.html" onsubmit="return validateForm()">
+        <br>
+        <h3>Shipping Details</h3>
+        <br>
+        <div class="mb-3 row">
+          <div class="col">
+            <label for="InputName1" class="form-label">FirstName</label>
+            <input type="text" class="form-control" id="InputName1" placeholder="FirstName" required>
+          </div>
+          <div class="col">
+            <label for="InputName2" class="form-label">LastName</label>
+            <input type="text" class="form-control" id="InputName2" placeholder="LastName" required>
+          </div>
+          
+        </div>
+        <div class="mb-3 row">  
+          <div class="col">
+            <label for="InputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="abc@123.com" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+        </div>
+        
+        <div class="mb-3 row">
+          <div class="col">
+            <label for="InputPhone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="InputPhone" placeholder="+65 12345678" required>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="col">
+            <label for="InputAddress" class="form-label">Home Address</label>
+            <input type="text" class="form-control" id="InputAddress" placeholder="123 Nanyang Road" required>
+          </div>
+          <div class="col">
+            <label for="InputPostal" class="form-label">Postal Code</label>
+            <input type="text" class="form-control" id="InputPostal" placeholder="123456" required>
+          </div>
+        </div>
+        <br>
+        <h3>Payment Information</h3>
+        <br>
+        <div class="mb-3 row">
+          <div class="col"> 
+            <label for="InputCardNum" class="form-label">Credit Card No.</label>
+            <input type="text" class="form-control" id="InputCardNum" placeholder="123456789" required>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="col">
+            <label for="InputExp" class="form-label">EXP</label>
+            <input type="text" class="form-control" id="InputExp" placeholder="MM/YY" required>
+          </div>
+          <div class="col">
+            <label for="InputCCV" class="form-label">CCV</label>
+            <input type="text" class="form-control" id="InputCCV" placeholder="1234" required>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="background-color: 0d6efd; border:none;"><a href="thanku.html" id="purchase"><input type="submit" id="BuyNow" value="Purchase" style="
+          border-radius: 0.3rem;"></a></button>
+      </form>
+    </div>
+  </div>  
+  <footer class="py-3 my-4">
+    <img src="images/logo.png" alt="logo" class="rounded mx-auto d-block" width="75px" height="70px"
+        style="text-align: center;">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2023 MyBeautyStation&reg; <br></p>
+</footer>
+</body>
+
+</html>
