@@ -13,3 +13,9 @@ body {
     background-color: goldenrod;
     color: white;
 }
+
+#directHome {
+    font-size: 15px;
+    text-decoration: none;
+
+}

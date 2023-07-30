@@ -3,7 +3,12 @@ body {
     background-color: white;
     font-family: 'Open Sans', sans-serif;
 }
-
+#hanging-icons h1 {
+    font-family: Bodoni Moda;
+}
+#titleService:hover {
+    color:black;
+}
 .container {
     display: flex;
     align-content: center;
