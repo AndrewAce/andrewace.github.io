@@ -60,7 +60,7 @@
   }
 
   .image-container:hover .image-overlay {
-    opacity: 0;
+    opacity: 1;
   }
   .hidden {
   opacity: 0;
